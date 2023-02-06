@@ -1,7 +1,7 @@
 import { Popup, Marker, Map } from "mapbox-gl";
 
 export const generateNewMarker = ({ lat, lng, map }) => {
-  const popUp = new Popup({ closeButton: false, anchor: "left" }).setHTML(
+  const popUp = new Popup({ closeButton: true, anchor: "left" }).setHTML(
     `<div class="popup">You click here: <br/>[${lng},  ${lat}]</div>`
   );
   new Marker({ color: "red", scale: 2.5 })
