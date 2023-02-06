@@ -24,7 +24,7 @@ export const generateNewMarker = ({ lat, lng, map }) => {
   var map = L.mapbox
     .map("map")
     .setView([0, 0], 5)
-    .addLayer(L.mapbox.styleLayer("mapbox://styles/mapbox/streets-v11"));
+    .addLayer(L.mapbox.styleLayer("mapbox://styles/mapbox/streets-v12"));
 
   // The GeoJSON representing a point feature with a property of 'video' for the Vimeo iframe
   var geoJson = {
