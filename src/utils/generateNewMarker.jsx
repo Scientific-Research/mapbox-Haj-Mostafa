@@ -9,7 +9,12 @@ export const generateNewMarker = ({ lat, lng, map }) => {
     .setPopup(popUp)
     .addTo(map);
 
-      new Marker({ color: "red", scale: 2.5 })
+  new Marker({ color: "green", scale: 2.5 })
+    .setLngLat([13.4, 52.52])
+    .setPopup(popUp)
+    .addTo(map);
+
+  new Marker({ color: "blue", scale: 2.5 })
     .setLngLat([13.4, 52.52])
     .setPopup(popUp)
     .addTo(map);
